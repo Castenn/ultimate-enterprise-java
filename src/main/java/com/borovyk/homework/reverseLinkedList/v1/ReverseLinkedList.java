@@ -1,4 +1,4 @@
-package com.borovyk.homework.reverseLinkedList;
+package com.borovyk.homework.reverseLinkedList.v1;
 
 import java.util.Objects;
 
