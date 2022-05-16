@@ -111,7 +111,7 @@ public class HashTable<K, V> {
     }
 
     private int calculateIndex(V value) {
-        return value.hashCode() % container.length;
+        return Math.abs(value.hashCode() % container.length);
     }
 
 }
