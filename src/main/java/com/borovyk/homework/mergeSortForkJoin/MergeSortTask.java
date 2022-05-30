@@ -7,7 +7,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class MergeSortTask<T extends Comparable<T>> extends RecursiveTask<List<T>> {
 
-    private List<T> list;
+    private final List<T> list;
 
     public MergeSortTask(List<T> list) {
         this.list = list;
