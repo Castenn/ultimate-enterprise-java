@@ -28,6 +28,7 @@ public class MergeSortTask<T extends Comparable<T>> extends RecursiveTask<List<T
 
         leftTask.fork();
         rightTask.compute();
+        leftTask.join();
 
         merge(leftList, rightList);
         return list;
